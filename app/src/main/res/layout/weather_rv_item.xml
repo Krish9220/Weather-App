@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_gravity="center"
+    android:layout_margin="4dp"
+    app:cardElevation="6dp"
+    app:cardCornerRadius="10dp"
+    android:background="@android:color/transparent">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_back">
+
+        <TextView
+            android:id="@+id/idTVTime2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="4dp"
+            android:text="time"
+            android:textColor="@color/white"
+            android:textAlignment="center"/>
+
+        <TextView
+            android:id="@+id/idTVTemperature2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_below="@id/idTVTime2"
+            android:padding="4dp"
+            android:text="-11"
+            android:textSize="20sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"/>
+
+        <ImageView
+            android:id="@+id/idIVCondition2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/idTVTemperature2"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="5dp"
+            android:padding="4dp"
+            android:src="@mipmap/ic_launcher"/>
+
+
+        <TextView
+            android:id="@+id/idTVWindSpeed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/idIVCondition2"
+            android:gravity="center"
+            android:layout_margin="4dp"
+            android:padding="3dp"
+            android:text="00"
+            android:textAlignment="center"
+            android:textColor="@color/white"/>
+
+
+        
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
